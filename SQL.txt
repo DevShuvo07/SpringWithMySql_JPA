@@ -1,0 +1,20 @@
+use products;
+
+CREATE TABLE PRODUCT (id int not null PRIMARY KEY AUTO_INCREMENT,
+name varchar(250) COLLATE utf8_unicode_ci NOT NULL,
+PRICE decimal(10,1) NOT NULL,
+quantity int NOT NULL,
+description text COLLATE utf8_unicode_ci NOT NULL,
+photo varchar(250) COLLATE utf8_unicode_ci NOT NULL,
+featured tinyint NOT NULL)
+ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+insert into product ( name, PRICE, quantity, description, photo, featured) values ('mobile1', '2.0', 
+2, 'description1', 'thumb1.gif', 1), ('mobile2', '1.0', 
+5, 'description2', 'thumb1.gif', 1), ('mobile1', '3.0', 
+9, 'description3', 'thumb1.gif', 1), ('mobile1', '5.0', 
+12, 'description4', 'thumb1.gif', 0), ('mobile1', '7.0', 
+5, 'description5', 'thumb1.gif', 1), ('mobile1', '9.0', 
+2, 'description6', 'thumb1.gif', 1), ('mobile1', '12.0', 
+8, 'description7', 'thumb1.gif', 0), ('mobile1', '15.0', 
+11, 'description8', 'thumb1.gif', 0);
